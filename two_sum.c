@@ -10,7 +10,7 @@ int	*two_sum(int *nums, int num_size, int target, int *return_size)
 	int	ans;
 	int	*result;
 
-	num_hash = calloc(NUMBER, sizeof(int));
+	num_hash = my_calloc(NUMBER, sizeof(int));
 	if (!num_hash)
 		return (NULL);
 	i = 0;
