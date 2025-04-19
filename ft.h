@@ -10,6 +10,8 @@ int		my_atoi(char num[]);
 int		my_strcmp(char *str1, char *str2);
 void	my_strswp(char *str1, char *str2);
 int		my_strlen(char *str);
+void	*my_memset(void *str, int c, size_t n);
+void	*my_calloc(size_t nmeb, size_t size);
 
 int		str_partition(char arr[], int low, int high);
 void	quicksort_str(char arr[], int low, int high);

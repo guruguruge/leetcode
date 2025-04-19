@@ -56,6 +56,34 @@ void	my_strswp(char *str1, char *str2)
 	*str2 = temp;
 }
 
+void	*my_memset(void *str, int c, size_t n)
+{
+	unsigned char	*str_c;
+	unsigned char	char_c;
+	size_t			i;
+
+	char_c = (unsigned char)c;
+	str_c = (unsigned char *)str;
+	i = 0;
+	while (i < n)
+	{
+		str_c[i] = char_c;
+		i++;
+	}
+	return (str);
+}
+
+void	*my_calloc(size_t element_num, size_t size)
+{
+	void	*str;
+
+	str = malloc(element_num * size);
+	if (!str)
+		return (NULL);
+	my_memset(str, 0, element_num * size);
+	return (str);
+}
+
 int	str_partition(char arr[], int low, int high)
 {
 	char	pivot;
