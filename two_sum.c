@@ -1,6 +1,6 @@
 #include "ft.h"
 
-#define NUMBER 20000001
+#define NUMBER 20000000
 #define OFFSET 10000000
 
 int	*two_sum(int *nums, int num_size, int target, int *return_size)
@@ -39,8 +39,8 @@ int	*two_sum(int *nums, int num_size, int target, int *return_size)
 int	main(void)
 {
 	int num_size = 3;
-	int nums[] = {1, 1, 1};
-	int target = 2;
+	int nums[] = {1, 150, 150};
+	int target = 300;
 	int return_size = 0;
 
 	int *result = two_sum(nums, num_size, target, &return_size);
