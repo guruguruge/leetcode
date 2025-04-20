@@ -5,6 +5,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define __bool_true_false_are_defined 1
+# define bool _Bool
+# define true 1
+# define false 0 // for submition
+
 int		my_atoi(char num[]);
 
 int		my_strcmp(char *str1, char *str2);
