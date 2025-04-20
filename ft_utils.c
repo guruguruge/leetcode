@@ -56,6 +56,26 @@ void	my_strswp(char *str1, char *str2)
 	*str2 = temp;
 }
 
+char	*my_strdup(char *str)
+{
+	char	*copy_str;
+	int		size;
+	int		i;
+
+	size = my_strlen(str);
+	copy_str = (char *)malloc((size + 1) * (sizeof(char)));
+	if (!copy_str)
+		return (NULL);
+	i = 0;
+	while (str[i])
+	{
+		copy_str[i] = str[i];
+		i++;
+	}
+	copy_str[i] = '\0';
+	return (copy_str);
+}
+
 void	*my_memset(void *str, int c, size_t n)
 {
 	unsigned char	*str_c;
