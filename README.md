@@ -1,4 +1,5 @@
-C lang practice
+
+C lang practice && py practice
 
 できるだけnorm守る
 
